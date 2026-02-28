@@ -1,141 +1,278 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Metal Servicing & Fabrication in Chennai | Your Business Name</title>
-  <meta name="description"
-    content="Professional metal servicing and fabrication in Chennai — welding, CNC cutting, laser cutting, and custom metal works." />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Electrotechsystems | Steel Trading Excellence</title>
 
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f7f7f7;
-      color: #333;
-    }
-    header {
-      background: #111;
-      color: #fff;
-      padding: 20px 0;
-      text-align: center;
-    }
-    nav a {
-      margin: 0 15px;
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .hero {
-      background: #2874f0;
-      color: #fff;
-      padding: 60px 20px;
-      text-align: center;
-    }
-    .services {
-      padding: 40px 20px;
-    }
-    .services h2,
-    .contact h2 {
-      text-align: center;
-      margin-bottom: 25px;
-    }
-    .service-cards {
-      display: flex;
-      gap: 20px;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-    .card {
-      background: #fff;
-      border-radius: 6px;
-      max-width: 250px;
-      padding: 20px;
-      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    }
-    .contact {
-      background: #fff;
-      padding: 40px 20px;
-      text-align: center;
-    }
-    footer {
-      text-align: center;
-      padding: 15px;
-      background: #111;
-      color: #fff;
-    }
-    .btn {
-      display: inline-block;
-      background: #2874f0;
-      color: #fff;
-      padding: 10px 20px;
-      text-decoration: none;
-      border-radius: 4px;
-      margin-top: 10px;
-    }
-  </style>
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f6fa;
+    color: #333;
+}
+
+/* HEADER */
+header {
+    background: #ffffff;
+    padding: 15px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+.btn-orange {
+    background: #ff6a00;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 70px 20px;
+}
+.hero h1 {
+    font-size: 40px;
+}
+.hero p {
+    color: #666;
+}
+
+/* PRODUCTS */
+.section {
+    padding: 60px 80px;
+}
+.section h2 {
+    text-align: center;
+    font-size: 32px;
+}
+.cards {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+.card {
+    background: #fff;
+    width: 320px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    padding: 20px;
+}
+.card h3 {
+    margin-top: 10px;
+}
+.card ul {
+    padding-left: 18px;
+    color: #555;
+}
+.card button {
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px;
+    background: #0b1b36;
+    color: white;
+    border: none;
+    border-radius: 6px;
+}
+
+/* WHY CHOOSE US */
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+.feature-box {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+/* CONTACT */
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 40px;
+}
+.contact-form {
+    flex: 1;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+}
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+.contact-form button {
+    background: #ff6a00;
+    color: white;
+    padding: 12px;
+    border: none;
+    width: 100%;
+    border-radius: 6px;
+}
+.contact-info {
+    flex: 1;
+}
+.info-box {
+    background: #0b1b36;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+footer {
+    background: #0b1b36;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 60px;
+}
+</style>
 </head>
 
 <body>
 
-  <!-- Header -->
-  <header>
+<header>
+    <div class="logo">Electrotechsystems</div>
     <nav>
-      <a href="#services">Services</a>
-      <a href="#about">About Us</a>
-      <a href="#contact">Contact</a>
+        <a href="#">Home</a>
+        <a href="#products">Products</a>
+        <a href="#why">Why Us</a>
+        <a href="#contact">Contact</a>
+        <a href="#" class="btn-orange">Get Quote</a>
     </nav>
-  </header>
+</header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <h1>Metal Servicing & Custom Fabrication — Chennai</h1>
-    <p>High-quality welding, CNC cutting & laser services for industrial and commercial needs</p>
-    <a href="#contact" class="btn">Get a Free Quote</a>
-  </section>
+<section class="hero">
+    <h1>Steel Trading Excellence</h1>
+    <p>Comprehensive range of high-quality steel products for industrial needs</p>
+</section>
 
-  <!-- Services -->
-  <section id="services" class="services">
-    <h2>Our Services</h2>
-    <div class="service-cards">
-      <div class="card">
-        <h3>Welding & Repairs</h3>
-        <p>Expert welding for steel and metal parts — MIG, TIG, Arc.</p>
-      </div>
-      <div class="card">
-        <h3>CNC Cutting</h3>
-        <p>Precision cutting services using CNC machines for accuracy.</p>
-      </div>
-      <div class="card">
-        <h3>Laser Cutting</h3>
-        <p>Clean and fast laser cutting for sheet metal and components.</p>
-      </div>
+<section id="products" class="section">
+    <h2>Our Products</h2>
+    <div class="cards">
+
+        <div class="card">
+            <h3>Cold Rolled Steel Coils</h3>
+            <ul>
+                <li>Thickness: 0.15mm – 3.0mm</li>
+                <li>Width: 600mm – 1500mm</li>
+                <li>Grade: CR1, CR2, CR3</li>
+            </ul>
+            <button>Get Quote</button>
+        </div>
+
+        <div class="card">
+            <h3>Galvanized Steel Sheets</h3>
+            <ul>
+                <li>Coating: Z120 – Z275</li>
+                <li>Thickness: 0.25mm – 4.0mm</li>
+                <li>Standard: IS 277, ASTM A653</li>
+            </ul>
+            <button>Get Quote</button>
+        </div>
+
+        <div class="card">
+            <h3>Structural Steel Beams</h3>
+            <ul>
+                <li>Grade: IS 2062, ASTM A36</li>
+                <li>Sizes: ISMB, ISMC, ISJB</li>
+                <li>Length: Up to 12 meters</li>
+            </ul>
+            <button>Get Quote</button>
+        </div>
+
     </div>
-  </section>
+</section>
 
-  <!-- About Us -->
-  <section id="about" class="services">
-    <h2>About Us</h2>
-    <p style="max-width: 800px; margin: 0 auto; text-align: center;">
-      We are a trusted metal servicing company in Chennai offering welding, fabrication and cutting solutions with
-      professional workmanship and on-time delivery.
-    </p>
-  </section>
+<section id="why" class="section">
+    <h2>Why Choose Us</h2>
+    <div class="features">
+        <div class="feature-box">
+            <h3>Quality Assurance</h3>
+            <p>Every product undergoes strict testing to meet global standards.</p>
+        </div>
+        <div class="feature-box">
+            <h3>Extensive Experience</h3>
+            <p>Over 28 years of excellence in steel trading industry.</p>
+        </div>
+        <div class="feature-box">
+            <h3>Competitive Pricing</h3>
+            <p>Efficient sourcing allows cost-effective pricing without compromise.</p>
+        </div>
+        <div class="feature-box">
+            <h3>Timely Delivery</h3>
+            <p>Reliable logistics ensure on-time delivery across India.</p>
+        </div>
+        <div class="feature-box">
+            <h3>Wide Product Range</h3>
+            <p>Comprehensive inventory catering to diverse industrial needs.</p>
+        </div>
+        <div class="feature-box">
+            <h3>Expert Support</h3>
+            <p>Dedicated experts help select the right product for your project.</p>
+        </div>
+    </div>
+</section>
 
-  <!-- Contact -->
-  <section id="contact" class="contact">
-    <h2>Contact Us</h2>
-    <p>Call / WhatsApp: <strong>+91 98765 43210</strong></p>
-    <p>Email: <strong>contact@yourdomain.in</strong></p>
-    <a href="mailto:contact@yourdomain.in" class="btn">Send Email</a>
-  </section>
+<section id="contact" class="section">
+    <h2>Get In Touch</h2>
+    <div class="contact-container">
 
-  <!-- Footer -->
-  <footer>
-    &copy; 2026 Your Business Name — All Rights Reserved
-  </footer>
+        <div class="contact-form">
+            <h3>Send us a Message</h3>
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <input type="text" placeholder="Phone Number">
+            <textarea rows="4" placeholder="Your Message"></textarea>
+            <button>Send Message</button>
+        </div>
+
+        <div class="contact-info">
+            <div class="info-box">
+                <h4>Address</h4>
+                <p>Plot No. 45-48, MIDC Area, Mumbai, Maharashtra, India</p>
+            </div>
+            <div class="info-box">
+                <h4>Phone</h4>
+                <p>+91 22 4567 8900</p>
+            </div>
+            <div class="info-box">
+                <h4>Email</h4>
+                <p>info@electrotechsystems.com</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    © 2026 Electrotechsystems. All Rights Reserved.
+</footer>
 
 </body>
-
 </html>
